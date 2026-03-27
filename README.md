@@ -1,59 +1,231 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌐 PHP Laravel 12 Localization To Vue
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern **Laravel 12 + Vue 3 + Inertia.js project** demonstrating how to implement **Localization (Multi-Language Support)** using JSON translation files.
 
-## About Laravel
+This project shows how to switch languages dynamically (English & Gujarati) and use the translated content inside **Vue components through Inertia shared data**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 🛠️ Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+| Technology       | Description        |
+| ---------------- | ------------------ |
+| Framework        | Laravel 12         |
+| Frontend         | Vue 3 + Inertia.js |
+| Styling          | Tailwind CSS       |
+| Authentication   | Laravel Breeze     |
+| Language Support | JSON Localization  |
+| Server           | Apache (XAMPP)     |
+| PHP Version      | 8.2+               |
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+# 🚀 Step 1: Create Project & Install Authentication
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Run the following commands in your terminal.
 
-## Laravel Sponsors
+```bash
+# Create a new Laravel 12 project
+composer create-project laravel/laravel PHP_Laravel12_Localization_To_Vue
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+cd PHP_Laravel12_Localization_To_Vue
 
-### Premium Partners
+# Install Breeze with Vue + Inertia
+composer require laravel/breeze --dev
+php artisan breeze:install vue
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Run database migration
+php artisan migrate
 
-## Contributing
+# Install frontend dependencies
+npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+# 🌍 Step 2: Localization Files (JSON)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Inside the project root create a **lang folder** and add these JSON files.
 
-## Security Vulnerabilities
+⚠️ Important: Ensure the files are saved in **UTF-8 encoding** in VS Code.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 📄 lang/en.json (English)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```json
+{
+    "shop_name": "SANCHELA JEWELS",
+    "welcome_msg": "Welcome to Sanchela Jewels",
+    "description": "Manage your premium jewelry collection easily.",
+    "login": "Login",
+    "register": "Register",
+    "dashboard_title": "Jewelry Dashboard",
+    "gold_stock": "Gold Stock",
+    "silver_stock": "Silver Stock",
+    "diamond_stock": "Diamond Stock",
+    "recent_items": "Recent Jewelry Added"
+}
+```
+
+---
+
+## 📄 lang/gu.json (Gujarati)
+
+```json
+{
+    "shop_name": "સંચેલા જ્વેલર્સ",
+    "welcome_msg": "સંચેલા જ્વેલર્સમાં તમારું સ્વાગત છે",
+    "description": "તમારા પ્રીમિયમ જ્વેલરી કલેક્શનને સરળતાથી મેનેજ કરો.",
+    "login": "લોગિન",
+    "register": "રજીસ્ટર",
+    "dashboard_title": "જ્વેલરી ડેશબોર્ડ",
+    "gold_stock": "સોનાનો સ્ટોક",
+    "silver_stock": "ચાંદીનો સ્ટોક",
+    "diamond_stock": "હીરાનો સ્ટોક",
+    "recent_items": "તાજેતરમાં ઉમેરાયેલ વસ્તુઓ"
+}
+```
+
+---
+
+# ⚙️ Step 3: Middleware & Backend Logic
+
+## 1️⃣ Create SetLocale Middleware
+
+Run command:
+
+```bash
+php artisan make:middleware SetLocale
+```
+
+Update file:
+
+📄 `app/Http/Middleware/SetLocale.php`
+
+```php
+public function handle($request, $next)
+{
+    if (session()->has('locale')) {
+        app()->setLocale(session('locale'));
+    }
+
+    return $next($request);
+}
+```
+
+---
+
+## 2️⃣ Register Middleware
+
+Open:
+
+📄 `bootstrap/app.php`
+
+Add middleware inside **web group**.
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->web(append: [
+        \App\Http\Middleware\SetLocale::class,
+    ]);
+})
+```
+
+---
+
+## 3️⃣ Share Localization Data with Inertia
+
+Open:
+
+📄 `app/Http/Middleware/HandleInertiaRequests.php`
+
+Inside the `share()` method add:
+
+```php
+'locale' => app()->getLocale(),
+
+'language' => function () {
+    $locale = app()->getLocale();
+    $path = base_path("lang/$locale.json");
+
+    return file_exists($path)
+        ? json_decode(file_get_contents($path), true)
+        : [];
+},
+```
+
+This makes the translation data available inside **Vue components**.
+
+---
+
+# 🔁 Step 4: Language Switching Route
+
+Open:
+
+📄 `routes/web.php`
+
+Add the following route:
+
+```php
+Route::get('language/{locale}', function ($locale) {
+
+    if (in_array($locale, ['en', 'gu'])) {
+        session()->put('locale', $locale);
+    }
+
+    return redirect()->back();
+});
+```
+
+Now language can be switched using URLs like:
+
+```
+/language/en
+/language/gu
+```
+
+---
+
+# ▶️ How to Run the Project
+
+Run the following commands:
+
+```bash
+composer install
+npm install
+
+php artisan migrate
+php artisan optimize:clear
+
+php artisan serve
+npm run dev
+```
+
+Then open in browser:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+# 📂 Project Highlights
+
+This project demonstrates:
+
+* Laravel JSON Localization
+* Multi-Language Switching
+* Session Based Language Selection
+* Laravel Breeze Authentication
+* Vue 3 + Inertia Integration
+* Dynamic Translation Sharing with Vue
+
+---
+
+
+
+# Output
+<img width="1053" height="517" alt="image" src="https://github.com/user-attachments/assets/ada2c680-51e8-4e04-8b49-0ca073ea1616" />
+<img width="1153" height="563" alt="image" src="https://github.com/user-attachments/assets/e36a941d-0a11-4c77-9f97-b606e4bfa4a3" />
+
