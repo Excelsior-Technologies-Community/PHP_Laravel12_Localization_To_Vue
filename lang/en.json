@@ -1,0 +1,14 @@
+{
+    "welcome_message": "Welcome to Sanchela Jewels",
+    "description": "Manage your jewelry collection easily. Premium designs, authentic quality.",
+    "login": "Login",
+    "register": "Register",
+    "dashboard_title": "Jewelry Dashboard",
+    "welcome_user": "You're logged in,",
+    "gold_stock": "Gold Stock",
+    "silver_stock": "Silver Stock",
+    "diamond_stock": "Diamond Stock",
+    "recent_items": "Recent Jewelry Added",
+    "start_now": "Start Now",
+    "dashboard_btn": "Dashboard"
+}
