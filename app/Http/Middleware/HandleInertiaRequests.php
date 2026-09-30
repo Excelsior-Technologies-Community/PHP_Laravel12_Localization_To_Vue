@@ -24,25 +24,30 @@ class HandleInertiaRequests extends Middleware
 
                 $locale = app()->getLocale();
 
-                $path = base_path("lang/$locale.json");
+                $path = base_path("lang/{$locale}.json");
 
                 if (!file_exists($path)) {
-
-                    return [
-                        'welcome_message' => 'Welcome',
-                        'login' => 'Login',
-                        'register' => 'Register',
-                        'dashboard_title' => 'Jewelry Dashboard',
-                        'welcome_user' => 'Welcome',
-                        'gold_stock' => 'Gold Items',
-                        'silver_stock' => 'Silver Items',
-                        'diamond_stock' => 'Diamond Items',
-                        'recent_items' => 'Recent Jewelry Added'
-                    ];
+                    return [];
                 }
 
-                return json_decode(file_get_contents($path), true);
+                return json_decode(
+                    file_get_contents($path),
+                    true
+                ) ?? [];
             },
+
+            'availableLocales' => [
+                [
+                    'code' => 'en',
+                    'name' => 'English',
+                    'native_name' => 'English',
+                ],
+                [
+                    'code' => 'gu',
+                    'name' => 'Gujarati',
+                    'native_name' => 'ગુજરાતી',
+                ],
+            ],
 
         ]);
     }

@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\LocalizationAnalyticsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 
 Route::get('/', function () {
@@ -19,16 +20,6 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-});
-
 
 /*
 |--------------------------------------------------------------------------
@@ -36,15 +27,63 @@ Route::middleware('auth')->group(function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/language/{locale}', function ($locale) {
+Route::get('/language/{locale}', [
+    LanguageController::class,
+    'switch',
+])->name('language.switch');
 
-    if (in_array($locale, ['en','gu'])) {
-        Session::put('locale', $locale);
-    }
 
-    return redirect()->back();
+/*
+|--------------------------------------------------------------------------
+| Authenticated Routes
+|--------------------------------------------------------------------------
+*/
 
-})->name('language.switch');
+Route::middleware('auth')->group(function () {
+
+    Route::get('/profile', [
+        ProfileController::class,
+        'edit',
+    ])->name('profile.edit');
+
+    Route::patch('/profile', [
+        ProfileController::class,
+        'update',
+    ])->name('profile.update');
+
+    Route::delete('/profile', [
+        ProfileController::class,
+        'destroy',
+    ])->name('profile.destroy');
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Localization Settings
+    |--------------------------------------------------------------------------
+    */
+
+    Route::get('/language-settings', function () {
+        return Inertia::render('Localization/Settings');
+    })->name('language.settings');
+
+    Route::post('/language-settings', [
+        LanguageController::class,
+        'updatePreference',
+    ])->name('language.preference.update');
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Localization Analytics
+    |--------------------------------------------------------------------------
+    */
+
+    Route::get('/localization-analytics', [
+        LocalizationAnalyticsController::class,
+        'index',
+    ])->name('localization.analytics');
+});
 
 
 require __DIR__.'/auth.php';
