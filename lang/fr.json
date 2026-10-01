@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "dashboard": "Tableau de Bord",
+        "analytics": "Analytique de Localisation",
+        "settings": "Paramètres de Langue",
+        "profile": "Profil",
+        "logout": "Se Déconnecter"
+    },
+    "dashboard": {
+        "title": "Tableau de Bord",
+        "subtitle": "Découvrez notre collection de produits multilingue.",
+        "badge": "Expérience Produit Multilingue",
+        "welcome_badge": "Collection Premium",
+        "welcome": "Bienvenue sur le Tableau de Bord des Produits",
+        "description": "Parcourez les produits et utilisez l'application dans votre langue préférée.",
+        "current_language": "Langue Actuelle",
+        "products": "Produits",
+        "categories": "Catégories",
+        "total_products": "Total des Produits",
+        "active_collection": "Collection Active",
+        "product_categories": "Catégories de Produits",
+        "total_value": "Valeur Totale",
+        "collection_value": "Valeur de la Collection",
+        "average_price": "Prix Moyen",
+        "average_product_value": "Valeur Moyenne du Produit",
+        "collection": "Collection",
+        "search": "Rechercher des Produits",
+        "search_placeholder": "Rechercher un nom, une catégorie ou une description...",
+        "category": "Catégorie",
+        "all_categories": "Toutes les Catégories",
+        "reset": "Réinitialiser",
+        "showing": "Affichage de",
+        "of": "sur",
+        "price": "Prix",
+        "no_products": "Aucun Produit Trouvé",
+        "no_products_description": "Essayez de modifier votre recherche ou votre filtre de catégorie.",
+        "localization": "Localisation",
+        "available_languages": "Langues Disponibles",
+        "language_description": "Changez la langue depuis le menu de navigation.",
+        "footer": "Gestion de Produits Multilingue"
+    },
+    "products": {
+        "diamond_necklace": {
+            "name": "Collier en Diamants",
+            "category": "Collier",
+            "description": "Élégant collier en diamants avec une finition premium."
+        },
+        "gold_bracelet": {
+            "name": "Bracelet en Or",
+            "category": "Bracelet",
+            "description": "Bracelet classique en or adapté à un usage quotidien."
+        },
+        "pearl_earrings": {
+            "name": "Boucles d'Oreilles en Perles",
+            "category": "Boucles d'Oreilles",
+            "description": "De magnifiques boucles d'oreilles en perles au design intemporel."
+        },
+        "ruby_ring": {
+            "name": "Bague en Rubis",
+            "category": "Bague",
+            "description": "Bague en rubis premium avec un design élégant."
+        },
+        "luxury_watch": {
+            "name": "Montre de Luxe",
+            "category": "Montre",
+            "description": "Montre de luxe conçue pour une collection moderne."
+        },
+        "silver_chain": {
+            "name": "Chaîne en Argent",
+            "category": "Chaîne",
+            "description": "Belle chaîne en argent avec une finition moderne."
+        }
+    }
+}

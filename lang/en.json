@@ -1,55 +1,74 @@
 {
-    "welcome_message": "Welcome to Sanchela Jewels",
-    "description": "Manage your jewelry collection easily. Premium designs, authentic quality.",
-    "login": "Login",
-    "register": "Register",
-    "dashboard_title": "Jewelry Dashboard",
-    "welcome_user": "You're logged in,",
-    "gold_stock": "Gold Stock",
-    "silver_stock": "Silver Stock",
-    "diamond_stock": "Diamond Stock",
-    "recent_items": "Recent Jewelry Added",
-    "start_now": "Start Now",
-    "dashboard_btn": "Dashboard",
-
-    "language": "Language",
-    "english": "English",
-    "gujarati": "Gujarati",
-    "language_settings": "Language Settings",
-    "language_preference": "Language Preference",
-    "select_language": "Select your preferred language",
-    "save_language": "Save Language",
-    "preference_updated": "Language preference updated successfully.",
-
-    "localization": "Localization",
-    "localization_analytics": "Localization Analytics",
-    "language_activity": "Language Activity",
-    "total_language_changes": "Total Language Changes",
-    "english_selections": "English Selections",
-    "gujarati_selections": "Gujarati Selections",
-    "today_selections": "Today's Selections",
-    "recent_language_activity": "Recent Language Activity",
-    "from_language": "From Language",
-    "to_language": "To Language",
-    "user": "User",
-    "date": "Date",
-    "all_languages": "All Languages",
-    "from_date": "From Date",
-    "to_date": "To Date",
-    "filter": "Filter",
-    "reset": "Reset",
-    "no_activity": "No language activity found.",
-
-    "search_jewelry": "Search jewelry...",
-    "category": "Category",
-    "all_categories": "All Categories",
-    "ring": "Ring",
-    "necklace": "Necklace",
-    "bracelet": "Bracelet",
-    "earring": "Earring",
-    "item_name": "Item Name",
-    "weight": "Weight",
-    "price": "Price",
-    "no_jewelry_found": "No jewelry items found.",
-    "search_results": "Search Results"
+    "nav": {
+        "dashboard": "Dashboard",
+        "analytics": "Localization Analytics",
+        "settings": "Language Settings",
+        "profile": "Profile",
+        "logout": "Log Out"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "subtitle": "Explore our multilingual product collection.",
+        "badge": "Multilingual Product Experience",
+        "welcome_badge": "Premium Collection",
+        "welcome": "Welcome to the Product Dashboard",
+        "description": "Browse products and experience the application in your preferred language.",
+        "current_language": "Current Language",
+        "products": "Products",
+        "categories": "Categories",
+        "total_products": "Total Products",
+        "active_collection": "Active Collection",
+        "product_categories": "Product Categories",
+        "total_value": "Total Value",
+        "collection_value": "Collection Value",
+        "average_price": "Average Price",
+        "average_product_value": "Average Product Value",
+        "collection": "Collection",
+        "search": "Search Products",
+        "search_placeholder": "Search product name, category or description...",
+        "category": "Category",
+        "all_categories": "All Categories",
+        "reset": "Reset",
+        "showing": "Showing",
+        "of": "of",
+        "price": "Price",
+        "no_products": "No Products Found",
+        "no_products_description": "Try changing your search or category filter.",
+        "localization": "Localization",
+        "available_languages": "Available Languages",
+        "language_description": "Change the language from the navigation menu.",
+        "footer": "Multilingual Product Management"
+    },
+    "products": {
+        "diamond_necklace": {
+            "name": "Diamond Necklace",
+            "category": "Necklace",
+            "description": "Elegant diamond necklace with premium finishing."
+        },
+        "gold_bracelet": {
+            "name": "Gold Bracelet",
+            "category": "Bracelet",
+            "description": "Classic gold bracelet suitable for everyday wear."
+        },
+        "pearl_earrings": {
+            "name": "Pearl Earrings",
+            "category": "Earrings",
+            "description": "Beautiful pearl earrings with a timeless design."
+        },
+        "ruby_ring": {
+            "name": "Ruby Ring",
+            "category": "Ring",
+            "description": "Premium ruby ring with an elegant design."
+        },
+        "luxury_watch": {
+            "name": "Luxury Watch",
+            "category": "Watch",
+            "description": "Luxury watch designed for a modern collection."
+        },
+        "silver_chain": {
+            "name": "Silver Chain",
+            "category": "Chain",
+            "description": "Beautiful silver chain with a modern finish."
+        }
+    }
 }

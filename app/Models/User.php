@@ -31,4 +31,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function languageActivities()
+    {
+        return $this->hasMany(LanguageActivity::class);
+    }
 }

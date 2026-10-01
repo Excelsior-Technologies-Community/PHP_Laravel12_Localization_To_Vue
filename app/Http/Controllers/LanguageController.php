@@ -9,11 +9,19 @@ use Illuminate\Support\Facades\Session;
 
 class LanguageController extends Controller
 {
-    public function switch(Request $request, string $locale): RedirectResponse
-    {
-        $allowedLocales = ['en', 'gu'];
+    private array $allowedLocales = [
+        'en',
+        'gu',
+        'hi',
+        'es',
+        'fr',
+    ];
 
-        if (!in_array($locale, $allowedLocales)) {
+    public function switch(
+        Request $request,
+        string $locale
+    ): RedirectResponse {
+        if (!in_array($locale, $this->allowedLocales, true)) {
             return redirect()->back();
         }
 
@@ -46,7 +54,10 @@ class LanguageController extends Controller
         Request $request
     ): RedirectResponse {
         $validated = $request->validate([
-            'locale' => ['required', 'in:en,gu'],
+            'locale' => [
+                'required',
+                'in:' . implode(',', $this->allowedLocales),
+            ],
         ]);
 
         $oldLocale = Session::get(
@@ -73,6 +84,9 @@ class LanguageController extends Controller
 
         return redirect()
             ->route('language.settings')
-            ->with('success', __('language.preference_updated'));
+            ->with(
+                'success',
+                __('language.preference_updated')
+            );
     }
 }

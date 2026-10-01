@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "dashboard": "डैशबोर्ड",
+        "analytics": "लोकलाइजेशन एनालिटिक्स",
+        "settings": "भाषा सेटिंग्स",
+        "profile": "प्रोफ़ाइल",
+        "logout": "लॉग आउट"
+    },
+    "dashboard": {
+        "title": "डैशबोर्ड",
+        "subtitle": "हमारे बहुभाषी उत्पाद संग्रह का अन्वेषण करें।",
+        "badge": "बहुभाषी उत्पाद अनुभव",
+        "welcome_badge": "प्रीमियम संग्रह",
+        "welcome": "उत्पाद डैशबोर्ड में आपका स्वागत है",
+        "description": "उत्पादों को ब्राउज़ करें और अपनी पसंदीदा भाषा में एप्लिकेशन का अनुभव करें।",
+        "current_language": "वर्तमान भाषा",
+        "products": "उत्पाद",
+        "categories": "श्रेणियाँ",
+        "total_products": "कुल उत्पाद",
+        "active_collection": "सक्रिय संग्रह",
+        "product_categories": "उत्पाद श्रेणियाँ",
+        "total_value": "कुल मूल्य",
+        "collection_value": "संग्रह मूल्य",
+        "average_price": "औसत कीमत",
+        "average_product_value": "औसत उत्पाद मूल्य",
+        "collection": "संग्रह",
+        "search": "उत्पाद खोजें",
+        "search_placeholder": "उत्पाद का नाम, श्रेणी या विवरण खोजें...",
+        "category": "श्रेणी",
+        "all_categories": "सभी श्रेणियाँ",
+        "reset": "रीसेट",
+        "showing": "दिखाए जा रहे हैं",
+        "of": "में से",
+        "price": "कीमत",
+        "no_products": "कोई उत्पाद नहीं मिला",
+        "no_products_description": "अपनी खोज या श्रेणी फ़िल्टर बदलने का प्रयास करें।",
+        "localization": "स्थानीयकरण",
+        "available_languages": "उपलब्ध भाषाएँ",
+        "language_description": "नेविगेशन मेनू से भाषा बदलें।",
+        "footer": "बहुभाषी उत्पाद प्रबंधन"
+    },
+    "products": {
+        "diamond_necklace": {
+            "name": "हीरे का हार",
+            "category": "हार",
+            "description": "प्रीमियम फिनिश वाला सुंदर हीरे का हार।"
+        },
+        "gold_bracelet": {
+            "name": "सोने का कंगन",
+            "category": "कंगन",
+            "description": "दैनिक उपयोग के लिए उपयुक्त क्लासिक सोने का कंगन।"
+        },
+        "pearl_earrings": {
+            "name": "मोती की बालियाँ",
+            "category": "बालियाँ",
+            "description": "कालातीत डिज़ाइन वाली सुंदर मोती की बालियाँ।"
+        },
+        "ruby_ring": {
+            "name": "माणिक की अंगूठी",
+            "category": "अंगूठी",
+            "description": "शानदार डिज़ाइन वाली प्रीमियम माणिक की अंगूठी।"
+        },
+        "luxury_watch": {
+            "name": "लक्ज़री घड़ी",
+            "category": "घड़ी",
+            "description": "आधुनिक संग्रह के लिए डिज़ाइन की गई लक्ज़री घड़ी।"
+        },
+        "silver_chain": {
+            "name": "चांदी की चेन",
+            "category": "चेन",
+            "description": "आधुनिक फिनिश वाली सुंदर चांदी की चेन।"
+        }
+    }
+}

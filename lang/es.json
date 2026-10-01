@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "dashboard": "Panel",
+        "analytics": "Analítica de Localización",
+        "settings": "Configuración de Idioma",
+        "profile": "Perfil",
+        "logout": "Cerrar Sesión"
+    },
+    "dashboard": {
+        "title": "Panel",
+        "subtitle": "Explora nuestra colección de productos multilingüe.",
+        "badge": "Experiencia de Producto Multilingüe",
+        "welcome_badge": "Colección Premium",
+        "welcome": "Bienvenido al Panel de Productos",
+        "description": "Explora productos y disfruta de la aplicación en tu idioma preferido.",
+        "current_language": "Idioma Actual",
+        "products": "Productos",
+        "categories": "Categorías",
+        "total_products": "Total de Productos",
+        "active_collection": "Colección Activa",
+        "product_categories": "Categorías de Productos",
+        "total_value": "Valor Total",
+        "collection_value": "Valor de la Colección",
+        "average_price": "Precio Promedio",
+        "average_product_value": "Valor Promedio del Producto",
+        "collection": "Colección",
+        "search": "Buscar Productos",
+        "search_placeholder": "Buscar nombre, categoría o descripción del producto...",
+        "category": "Categoría",
+        "all_categories": "Todas las Categorías",
+        "reset": "Restablecer",
+        "showing": "Mostrando",
+        "of": "de",
+        "price": "Precio",
+        "no_products": "No se Encontraron Productos",
+        "no_products_description": "Intenta cambiar la búsqueda o el filtro de categoría.",
+        "localization": "Localización",
+        "available_languages": "Idiomas Disponibles",
+        "language_description": "Cambia el idioma desde el menú de navegación.",
+        "footer": "Gestión de Productos Multilingüe"
+    },
+    "products": {
+        "diamond_necklace": {
+            "name": "Collar de Diamantes",
+            "category": "Collar",
+            "description": "Elegante collar de diamantes con acabado premium."
+        },
+        "gold_bracelet": {
+            "name": "Pulsera de Oro",
+            "category": "Pulsera",
+            "description": "Clásica pulsera de oro adecuada para uso diario."
+        },
+        "pearl_earrings": {
+            "name": "Pendientes de Perlas",
+            "category": "Pendientes",
+            "description": "Hermosos pendientes de perlas con un diseño atemporal."
+        },
+        "ruby_ring": {
+            "name": "Anillo de Rubí",
+            "category": "Anillo",
+            "description": "Anillo de rubí premium con un diseño elegante."
+        },
+        "luxury_watch": {
+            "name": "Reloj de Lujo",
+            "category": "Reloj",
+            "description": "Reloj de lujo diseñado para una colección moderna."
+        },
+        "silver_chain": {
+            "name": "Cadena de Plata",
+            "category": "Cadena",
+            "description": "Hermosa cadena de plata con un acabado moderno."
+        }
+    }
+}

@@ -21,7 +21,6 @@ class HandleInertiaRequests extends Middleware
             'locale' => app()->getLocale(),
 
             'language' => function () {
-
                 $locale = app()->getLocale();
 
                 $path = base_path("lang/{$locale}.json");
@@ -41,11 +40,31 @@ class HandleInertiaRequests extends Middleware
                     'code' => 'en',
                     'name' => 'English',
                     'native_name' => 'English',
+                    'flag' => '🇬🇧',
                 ],
                 [
                     'code' => 'gu',
                     'name' => 'Gujarati',
                     'native_name' => 'ગુજરાતી',
+                    'flag' => '🇮🇳',
+                ],
+                [
+                    'code' => 'hi',
+                    'name' => 'Hindi',
+                    'native_name' => 'हिन्दी',
+                    'flag' => '🇮🇳',
+                ],
+                [
+                    'code' => 'es',
+                    'name' => 'Spanish',
+                    'native_name' => 'Español',
+                    'flag' => '🇪🇸',
+                ],
+                [
+                    'code' => 'fr',
+                    'name' => 'French',
+                    'native_name' => 'Français',
+                    'flag' => '🇫🇷',
                 ],
             ],
 

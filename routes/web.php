@@ -18,7 +18,8 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 
 /*
@@ -27,50 +28,55 @@ Route::get('/dashboard', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/language/{locale}', [
-    LanguageController::class,
-    'switch',
-])->name('language.switch');
+Route::get(
+    '/language/{locale}',
+    [LanguageController::class, 'switch']
+)->name('language.switch');
 
-
-/*
-|--------------------------------------------------------------------------
-| Authenticated Routes
-|--------------------------------------------------------------------------
-*/
 
 Route::middleware('auth')->group(function () {
 
-    Route::get('/profile', [
-        ProfileController::class,
-        'edit',
-    ])->name('profile.edit');
+    /*
+    |--------------------------------------------------------------------------
+    | Profile
+    |--------------------------------------------------------------------------
+    */
 
-    Route::patch('/profile', [
-        ProfileController::class,
-        'update',
-    ])->name('profile.update');
+    Route::get(
+        '/profile',
+        [ProfileController::class, 'edit']
+    )->name('profile.edit');
 
-    Route::delete('/profile', [
-        ProfileController::class,
-        'destroy',
-    ])->name('profile.destroy');
+    Route::patch(
+        '/profile',
+        [ProfileController::class, 'update']
+    )->name('profile.update');
+
+    Route::delete(
+        '/profile',
+        [ProfileController::class, 'destroy']
+    )->name('profile.destroy');
 
 
     /*
     |--------------------------------------------------------------------------
-    | Localization Settings
+    | Language Settings
     |--------------------------------------------------------------------------
     */
 
-    Route::get('/language-settings', function () {
-        return Inertia::render('Localization/Settings');
-    })->name('language.settings');
+    Route::get(
+        '/language-settings',
+        function () {
+            return Inertia::render(
+                'Localization/Settings'
+            );
+        }
+    )->name('language.settings');
 
-    Route::post('/language-settings', [
-        LanguageController::class,
-        'updatePreference',
-    ])->name('language.preference.update');
+    Route::post(
+        '/language-settings',
+        [LanguageController::class, 'updatePreference']
+    )->name('language.preference.update');
 
 
     /*
@@ -79,11 +85,16 @@ Route::middleware('auth')->group(function () {
     |--------------------------------------------------------------------------
     */
 
-    Route::get('/localization-analytics', [
-        LocalizationAnalyticsController::class,
-        'index',
-    ])->name('localization.analytics');
+    Route::get(
+        '/localization-analytics',
+        [LocalizationAnalyticsController::class, 'index']
+    )->name('localization.analytics');
+
+    Route::get(
+        '/localization-analytics/export',
+        [LocalizationAnalyticsController::class, 'export']
+    )->name('localization.analytics.export');
 });
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

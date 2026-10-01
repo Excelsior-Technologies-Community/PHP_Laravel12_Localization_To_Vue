@@ -1,55 +1,75 @@
+
 {
-    "welcome_message": "સંચેલા જ્વેલર્સમાં તમારું સ્વાગત છે",
-    "description": "તમારા જ્વેલરી કલેક્શનને સહજતાથી મેનેજ કરો. પ્રીમિયમ ડિઝાઇન, અસલી ગુણવત્તા.",
-    "login": "લોગિન",
-    "register": "રજીસ્ટર કરો",
-    "dashboard_title": "જ્વેલરી ડેશબોર્ડ",
-    "welcome_user": "તમે લોગિન છો,",
-    "gold_stock": "સોનાનો સ્ટોક",
-    "silver_stock": "ચાંદીનો સ્ટોક",
-    "diamond_stock": "હીરાનો સ્ટોક",
-    "recent_items": "તાજેતરમાં ઉમેરાયેલ વસ્તુઓ",
-    "start_now": "હવે શરૂ કરો",
-    "dashboard_btn": "ડેશબોર્ડ",
-
-    "language": "ભાષા",
-    "english": "અંગ્રેજી",
-    "gujarati": "ગુજરાતી",
-    "language_settings": "ભાષા સેટિંગ્સ",
-    "language_preference": "ભાષા પસંદગી",
-    "select_language": "તમારી પસંદગીની ભાષા પસંદ કરો",
-    "save_language": "ભાષા સાચવો",
-    "preference_updated": "ભાષાની પસંદગી સફળતાપૂર્વક અપડેટ થઈ.",
-
-    "localization": "સ્થાનિકીકરણ",
-    "localization_analytics": "ભાષા વિશ્લેષણ",
-    "language_activity": "ભાષા પ્રવૃત્તિ",
-    "total_language_changes": "કુલ ભાષા ફેરફારો",
-    "english_selections": "અંગ્રેજી પસંદગીઓ",
-    "gujarati_selections": "ગુજરાતી પસંદગીઓ",
-    "today_selections": "આજની પસંદગીઓ",
-    "recent_language_activity": "તાજેતરની ભાષા પ્રવૃત્તિ",
-    "from_language": "પહેલાની ભાષા",
-    "to_language": "નવી ભાષા",
-    "user": "વપરાશકર્તા",
-    "date": "તારીખ",
-    "all_languages": "બધી ભાષાઓ",
-    "from_date": "તારીખથી",
-    "to_date": "તારીખ સુધી",
-    "filter": "ફિલ્ટર",
-    "reset": "રીસેટ",
-    "no_activity": "કોઈ ભાષા પ્રવૃત્તિ મળી નથી.",
-
-    "search_jewelry": "જ્વેલરી શોધો...",
-    "category": "કેટેગરી",
-    "all_categories": "બધી કેટેગરી",
-    "ring": "રિંગ",
-    "necklace": "હાર",
-    "bracelet": "બ્રેસલેટ",
-    "earring": "કાનની બુટી",
-    "item_name": "વસ્તુનું નામ",
-    "weight": "વજન",
-    "price": "કિંમત",
-    "no_jewelry_found": "કોઈ જ્વેલરી મળી નથી.",
-    "search_results": "શોધ પરિણામો"
+    "nav": {
+        "dashboard": "ડેશબોર્ડ",
+        "analytics": "લોકલાઇઝેશન એનાલિટિક્સ",
+        "settings": "ભાષા સેટિંગ્સ",
+        "profile": "પ્રોફાઇલ",
+        "logout": "લૉગ આઉટ"
+    },
+    "dashboard": {
+        "title": "ડેશબોર્ડ",
+        "subtitle": "અમારા બહુભાષી પ્રોડક્ટ કલેક્શનનું અન્વેષણ કરો.",
+        "badge": "બહુભાષી પ્રોડક્ટ અનુભવ",
+        "welcome_badge": "પ્રીમિયમ કલેક્શન",
+        "welcome": "પ્રોડક્ટ ડેશબોર્ડમાં આપનું સ્વાગત છે",
+        "description": "પ્રોડક્ટ્સ જુઓ અને તમારી પસંદગીની ભાષામાં એપ્લિકેશનનો અનુભવ કરો.",
+        "current_language": "વર્તમાન ભાષા",
+        "products": "પ્રોડક્ટ્સ",
+        "categories": "કેટેગરીઝ",
+        "total_products": "કુલ પ્રોડક્ટ્સ",
+        "active_collection": "સક્રિય કલેક્શન",
+        "product_categories": "પ્રોડક્ટ કેટેગરીઝ",
+        "total_value": "કુલ કિંમત",
+        "collection_value": "કલેક્શન કિંમત",
+        "average_price": "સરેરાશ કિંમત",
+        "average_product_value": "સરેરાશ પ્રોડક્ટ કિંમત",
+        "collection": "કલેક્શન",
+        "search": "પ્રોડક્ટ શોધો",
+        "search_placeholder": "પ્રોડક્ટનું નામ, કેટેગરી અથવા વર્ણન શોધો...",
+        "category": "કેટેગરી",
+        "all_categories": "બધી કેટેગરીઝ",
+        "reset": "રીસેટ",
+        "showing": "દર્શાવી રહ્યા છીએ",
+        "of": "માંથી",
+        "price": "કિંમત",
+        "no_products": "કોઈ પ્રોડક્ટ મળ્યું નથી",
+        "no_products_description": "તમારી શોધ અથવા કેટેગરી ફિલ્ટર બદલવાનો પ્રયાસ કરો.",
+        "localization": "લોકલાઇઝેશન",
+        "available_languages": "ઉપલબ્ધ ભાષાઓ",
+        "language_description": "નેવિગેશન મેનૂમાંથી ભાષા બદલો.",
+        "footer": "બહુભાષી પ્રોડક્ટ મેનેજમેન્ટ"
+    },
+    "products": {
+        "diamond_necklace": {
+            "name": "હીરાનો હાર",
+            "category": "હાર",
+            "description": "પ્રીમિયમ ફિનિશ સાથેનો સુંદર હીરાનો હાર."
+        },
+        "gold_bracelet": {
+            "name": "સોનાનું બ્રેસલેટ",
+            "category": "બ્રેસલેટ",
+            "description": "દરરોજ પહેરવા માટે યોગ્ય ક્લાસિક સોનાનું બ્રેસલેટ."
+        },
+        "pearl_earrings": {
+            "name": "મોતીની બુટ્ટી",
+            "category": "બુટ્ટી",
+            "description": "કાલાતીત ડિઝાઇન સાથેની સુંદર મોતીની બુટ્ટી."
+        },
+        "ruby_ring": {
+            "name": "માણેકની વીંટી",
+            "category": "વીંટી",
+            "description": "સુઘડ ડિઝાઇન સાથેની પ્રીમિયમ માણેકની વીંટી."
+        },
+        "luxury_watch": {
+            "name": "લક્ઝરી ઘડિયાળ",
+            "category": "ઘડિયાળ",
+            "description": "આધુનિક કલેક્શન માટે ડિઝાઇન કરેલી લક્ઝરી ઘડિયાળ."
+        },
+        "silver_chain": {
+            "name": "ચાંદીની ચેન",
+            "category": "ચેન",
+            "description": "આધુનિક ફિનિશ સાથેની સુંદર ચાંદીની ચેન."
+        }
+    }
 }
